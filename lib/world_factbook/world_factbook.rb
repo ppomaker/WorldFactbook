@@ -10,6 +10,10 @@ class WorldFactbook
 
   def initialize(source_file_name)
     doc = Document.new File.new(source_file_name)
+  rescue StandardError => e
+    puts 'An error occured:', e
+    raise e
+  else
     initialize_continents(doc)
     initialize_countries(doc)
   end
@@ -29,21 +33,27 @@ class WorldFactbook
   end
 
   def max_population_country
-    @countries.max { |c| c.population.to_i }
+    @countries
+      .filter { |c| c.respond_to?(:population) }
+      .max { |c| c.population.to_i }
   end
 
   def max_inflation_countries(n)
-    @countries.filter(&:inflation).sort do |c1, c2|
-      -(c1.inflation.to_f <=> c2.inflation.to_f)
-    end
-      .take(n)
+    @countries
+      .filter { |c| c.respond_to?(:inflation) }
+      .sort { |c1, c2| -(c1.inflation.to_f <=> c2.inflation.to_f) }
+      .take n
   end
 
   def continents_with_countries
-    @continents.map do |cont|
-      cont.countries = @countries.filter { |c| c.continent == cont.name }
-      cont
-    end
+    @continents
+      .filter { |c| c.respond_to?(:name) }
+      .map do |cont|
+        cont.countries = @countries.filter do |c|
+          c.respond_to?(:continent) && c.continent == cont.name
+        end
+        cont
+      end
       .sort_by(&:name)
   end
 
