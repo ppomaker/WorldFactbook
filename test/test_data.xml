@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cia SYSTEM "cia.dtd">
+<cia>
+  <continent id='europe'
+             name='Europe'/>
+
+  <continent id='asia'
+             name='Asia'/>
+
+  <continent id='northAmerica'
+             name='North America'/>
+
+  <continent id='australia'
+             name='Australia/Oceania'/>
+
+  <continent id='southAmerica'
+             name='South America'/>
+
+  <continent id='africa'
+             name='Africa'/>
+
+  <country id='cid-cia-Belgium'
+           continent='Europe'
+           name='Belgium'
+           datacode='BE'
+           total_area='30510'
+           population='10170241'
+           population_growth='0.33'
+           infant_mortality='6.4'
+           gdp_agri='2'
+           inflation='1.6'
+           gdp_ind='28'
+           gdp_serv='70'
+           gdp_total='197000'
+           indep_date='04 10 1830'
+           government='constitutional monarchy'
+           capital='Brussels'>
+    <ethnicgroups name='Fleming'>55</ethnicgroups>
+    <ethnicgroups name='Walloon'>33</ethnicgroups>
+    <religions name='Roman Catholic'>75</religions>
+    <religions name='Protestant'>25</religions>
+    <languages name='French'>32</languages>
+    <languages name='German'>1</languages>
+    <languages name='Dutch'>56</languages>
+    <borders country='cid-cia-France'>620</borders>
+    <borders country='cid-cia-Germany'>167</borders>
+    <borders country='cid-cia-Luxembourg'>148</borders>
+    <borders country='cid-cia-Netherlands'>450</borders>
+    <coasts>North Sea</coasts>
+  </country>
+
+  <country id='cid-cia-Albania'
+           continent='Europe'
+           name='Albania'
+           datacode='AL'
+           total_area='28750'
+           population='3249136'
+           population_growth='1.34'
+           infant_mortality='49.2'
+           gdp_agri='55'
+           inflation='16'
+           gdp_total='4100'
+           indep_date='28 11 1912'
+           government='emerging democracy'
+           capital='Tirane'>
+    <ethnicgroups name='Greeks'>3</ethnicgroups>
+    <ethnicgroups name='Albanian'>95</ethnicgroups>
+    <religions name='Muslim'>70</religions>
+    <religions name='Roman Catholic'>10</religions>
+    <religions name='Albanian Orthodox'>20</religions>
+    <borders country='cid-cia-Greece'>282</borders>
+    <borders country='cid-cia-Macedonia'>151</borders>
+    <borders country='cid-cia-Serbia-and-Montenegro'>287</borders>
+    <coasts>Adriatic Sea</coasts>
+    <coasts>Ionian Sea</coasts>
+    <coasts>Serbia</coasts>
+    <coasts>Montenegro</coasts>
+  </country>
+
+  <country id='cid-cia-Andorra'
+           continent='Europe'
+           name='Andorra'
+           datacode='AN'
+           total_area='450'
+           population='72766'
+           population_growth='2.96'
+           infant_mortality='2.2'
+           gdp_total='1000'
+           government='parliamentary democracy that retains as its heads of state a coprincipality'
+           capital='Andorra la Vella'>
+    <ethnicgroups name='French'>6</ethnicgroups>
+    <ethnicgroups name='Spanish'>61</ethnicgroups>
+    <ethnicgroups name='Andorran'>30</ethnicgroups>
+    <religions name='Roman Catholic'>100</religions>
+    <borders country='cid-cia-France'>60</borders>
+    <borders country='cid-cia-Spain'>65</borders>
+  </country>
+
+  <country id='cid-cia-Austria'
+           continent='Europe'
+           name='Austria'
+           datacode='AU'
+           total_area='83850'
+           population='8023244'
+           population_growth='0.41'
+           infant_mortality='6.2'
+           gdp_agri='2'
+           inflation='2.3'
+           gdp_ind='34'
+           gdp_serv='64'
+           gdp_total='152000'
+           indep_date='12 11 1918'
+           government='federal republic'
+           capital='Vienna'>
+    <ethnicgroups name='German'>99.4</ethnicgroups>
+    <ethnicgroups name='Slovene'>0.2</ethnicgroups>
+    <ethnicgroups name='Croatian'>0.3</ethnicgroups>
+    <religions name='Roman Catholic'>85</religions>
+    <religions name='Protestant'>6</religions>
+    <languages name='German'>100</languages>
+    <borders country='cid-cia-Czech-Republic'>362</borders>
+    <borders country='cid-cia-Germany'>784</borders>
+    <borders country='cid-cia-Hungary'>366</borders>
+    <borders country='cid-cia-Italy'>430</borders>
+    <borders country='cid-cia-Liechtenstein'>37</borders>
+    <borders country='cid-cia-Slovakia'>91</borders>
+    <borders country='cid-cia-Slovenia'>324</borders>
+    <borders country='cid-cia-Switzerland'>164</borders>
+  </country>
+
+  <country id='cid-cia-Belarus'
+           continent='Europe'
+           name='Belarus'
+           datacode='BO'
+           total_area='207600'
+           population='10415973'
+           population_growth='0.2'
+           infant_mortality='13.4'
+           gdp_agri='21'
+           inflation='244'
+           gdp_ind='49'
+           gdp_serv='30'
+           gdp_total='49200'
+           indep_date='25 08 1991'
+           government='republic'
+           capital='Minsk'>
+    <ethnicgroups name='Polish'>4.1</ethnicgroups>
+    <ethnicgroups name='Ukrainian'>2.9</ethnicgroups>
+    <ethnicgroups name='Russian'>13.2</ethnicgroups>
+    <ethnicgroups name='Byelorussian'>77.9</ethnicgroups>
+    <religions name='Eastern Orthodox'>60</religions>
+    <borders country='cid-cia-Latvia'>141</borders>
+    <borders country='cid-cia-Lithuania'>502</borders>
+    <borders country='cid-cia-Poland'>605</borders>
+    <borders country='cid-cia-Ukraine'>891</borders>
+    <borders country='cid-cia-Russia'>959</borders>
+  </country>
+
+  <country id='cid-cia-Bosnia-and-Herzegovina'
+           continent='Europe'
+           name='Bosnia and Herzegovina'
+           datacode='BK'
+           total_area='51233'
+           population='2656240'
+           population_growth='-2.84'
+           infant_mortality='43.2'
+           gdp_total='1000'
+           indep_date='01 04 1992'
+           government='emerging democracy'
+           capital='Sarajevo'>
+    <ethnicgroups name='Muslim'>38</ethnicgroups>
+    <ethnicgroups name='Serb'>40</ethnicgroups>
+    <ethnicgroups name='Croat'>22</ethnicgroups>
+    <religions name='Muslim'>40</religions>
+    <religions name='Protestant'>4</religions>
+    <religions name='Orthodox'>31</religions>
+    <religions name='Catholic'>15</religions>
+    <languages name='Serbo-Croatian'>99</languages>
+    <borders country='cid-cia-Croatia'>932</borders>
+    <borders country='cid-cia-Serbia-and-Montenegro'>527</borders>
+    <coasts>Adriatic Sea</coasts>
+  </country>
+
+  <country id='cid-cia-Bulgaria'
+           continent='Europe'
+           name='Bulgaria'
+           datacode='BU'
+           total_area='110910'
+           population='8612757'
+           population_growth='0.46'
+           infant_mortality='15.7'
+           gdp_agri='12'
+           inflation='35'
+           gdp_ind='36'
+           gdp_serv='52'
+           gdp_total='43200'
+           indep_date='22 09 1908'
+           government='emerging democracy'
+           capital='Sofia'>
+    <ethnicgroups name='Russian'>0.2</ethnicgroups>
+    <ethnicgroups name='Gypsy'>2.6</ethnicgroups>
+    <ethnicgroups name='Turk'>8.5</ethnicgroups>
+    <ethnicgroups name='Bulgarian'>85.3</ethnicgroups>
+    <ethnicgroups name='Armenian'>0.3</ethnicgroups>
+    <ethnicgroups name='Macedonian'>2.5</ethnicgroups>
+    <religions name='Muslim'>13</religions>
+    <religions name='Jewish'>0.8</religions>
+    <religions name='Roman Catholic'>0.5</religions>
+    <religions name='Bulgarian Orthodox'>85</religions>
+    <religions name='Uniate Catholic'>0.2</religions>
+    <languages name='Bulgarian'>100</languages>
+    <borders country='cid-cia-Greece'>494</borders>
+    <borders country='cid-cia-Macedonia'>148</borders>
+    <borders country='cid-cia-Romania'>608</borders>
+    <borders country='cid-cia-Serbia-and-Montenegro'>318</borders>
+    <borders country='cid-cia-Turkey'>240</borders>
+    <coasts>Black Sea</coasts>
+  </country>
+
+  <country id='cid-cia-Christmas-Island'
+           continent='Asia'
+           name='Christmas Island'
+           datacode='KT'
+           total_area='135'
+           population='813'
+           population_growth='-8.98'
+           government='territory of Australia'
+           capital='The Settlement'>
+    <ethnicgroups name='Malay'>25</ethnicgroups>
+    <ethnicgroups name='Chinese'>61</ethnicgroups>
+    <ethnicgroups name='European'>11</ethnicgroups>
+    <religions name='Muslim'>10</religions>
+    <religions name='Buddhist'>55</religions>
+    <religions name='Christian'>15</religions>
+    <languages name='English'>100</languages>
+    <coasts>Indian Ocean</coasts>
+  </country>
+
+  <country id='cid-cia-Cocos-Islands'
+           continent='Asia'
+           name='Cocos Islands'
+           datacode='CK'
+           total_area='14'
+           population='609'
+           population_growth='0.94'
+           government='territory of Australia'
+           capital='West Island'>
+    <religions name='Sunni Muslim'>57</religions>
+    <religions name='Christian'>22</religions>
+    <languages name='English'>100</languages>
+    <coasts>Indian Ocean</coasts>
+  </country>
+
+  <country id='cid-cia-Cyprus'
+           continent='Asia'
+           name='Cyprus'
+           datacode='CY'
+           total_area='9250'
+           population='744609'
+           population_growth='1.11'
+           infant_mortality='8.4'
+           gdp_agri='5.6'
+           gdp_ind='24.9'
+           gdp_serv='69.5'
+           gdp_total='7800'
+           indep_date='16 08 1960'
+           government='republic'
+           capital='Nicosia'>
+    <religions name='Muslim'>18</religions>
+    <religions name='Greek Orthodox'>78</religions>
+    <coasts>Mediterranean Sea</coasts>
+  </country>
+
+  <country id='cid-cia-Midway-Islands'
+           continent='Australia/Oceania'
+           name='Midway Islands'
+           datacode='MQ'
+           total_area='5.2'
+           government='unincorporated territory of the US formerly administered by the US Navy'>
+    <coasts>Tokyo</coasts>
+    <coasts>North Pacific Ocean</coasts>
+    <coasts>Honolulu</coasts>
+  </country>
+
+</cia>

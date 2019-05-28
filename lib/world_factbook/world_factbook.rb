@@ -9,11 +9,16 @@ class WorldFactbook
   attr_reader :continents, :countries
 
   def initialize(source_file_name)
-    doc = Document.new File.new(source_file_name)
-  rescue StandardError => e
-    puts 'An error occured:', e
-    raise e
-  else
+    unless File.exists?(source_file_name)
+      raise ArgumentError, "File #{source_file_name} not found"
+    end
+
+    begin
+      doc = Document.new File.new(source_file_name)
+    rescue ParseException => e
+      raise e
+    end
+
     initialize_continents(doc)
     initialize_countries(doc)
   end
@@ -35,7 +40,7 @@ class WorldFactbook
   def max_population_country
     @countries
       .filter { |c| c.respond_to?(:population) }
-      .max { |c| c.population.to_i }
+      .max { |c1, c2| c1.population.to_i <=> c2.population.to_i }
   end
 
   def max_inflation_countries(n)

@@ -12,6 +12,12 @@ $ cd WorldFactbook
 $ bundle install
 ```
 
+## Test
+```
+$ cd test/
+$ ruby test_world_factbook.rb
+```
+
 ## Run
 ```
 $ cd bin/
