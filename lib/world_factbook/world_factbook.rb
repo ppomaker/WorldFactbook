@@ -23,20 +23,6 @@ class WorldFactbook
     initialize_countries(doc)
   end
 
-  def initialize_continents(doc)
-    @continents = []
-    doc.elements.each(Continent.xpath) do |element|
-      @continents << Continent.new(element.attributes)
-    end
-  end
-
-  def initialize_countries(doc)
-    @countries = []
-    doc.elements.each(Country.xpath) do |element|
-      @countries << Country.new(element.attributes)
-    end
-  end
-
   def max_population_country
     @countries
       .filter { |c| c.respond_to?(:population) }
@@ -62,6 +48,20 @@ class WorldFactbook
       .sort_by(&:name)
   end
 
-  private :initialize_continents, :initialize_countries
+  private
+
+  def initialize_continents(doc)
+    @continents = []
+    doc.elements.each(Continent.xpath) do |element|
+      @continents << Continent.new(element.attributes)
+    end
+  end
+
+  def initialize_countries(doc)
+    @countries = []
+    doc.elements.each(Country.xpath) do |element|
+      @countries << Country.new(element.attributes)
+    end
+  end
 
 end
